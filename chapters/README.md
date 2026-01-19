@@ -1,6 +1,6 @@
 # Don't Make AI Think - Download Files
 
-## Book by Tom Harris
+## Book by Tom Cranstoun
 
 This folder contains the complete book "Don't Make AI Think: A Common Sense Approach to Designing for AI Agents"
 

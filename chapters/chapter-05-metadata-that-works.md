@@ -66,7 +66,7 @@ There are three ways to add Schema.org markup to your pages. Let me save you som
 
 ```html
 <div itemscope itemtype="https://schema.org/Person">
-  <span itemprop="name">Tom Harris</span>
+  <span itemprop="name">Tom Cranstoun</span>
   <span itemprop="jobTitle">Principal Consultant</span>
 </div>
 ```
@@ -75,7 +75,7 @@ There are three ways to add Schema.org markup to your pages. Let me save you som
 
 ```html
 <div vocab="https://schema.org/" typeof="Person">
-  <span property="name">Tom Harris</span>
+  <span property="name">Tom Cranstoun</span>
   <span property="jobTitle">Principal Consultant</span>
 </div>
 ```
@@ -87,7 +87,7 @@ There are three ways to add Schema.org markup to your pages. Let me save you som
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Tom Harris",
+  "name": "Tom Cranstoun",
   "jobTitle": "Principal Consultant"
 }
 </script>
@@ -203,7 +203,7 @@ For blog posts, articles, case studies—any editorial content:
   "image": "https://example.com/article-image.jpg",
   "author": {
     "@type": "Person",
-    "name": "Tom Harris",
+    "name": "Tom Cranstoun",
     "url": "https://www.digitaldomain.co.uk/about"
   },
   "publisher": {
@@ -236,7 +236,7 @@ If your site has multiple authors, you can use an array:
 "author": [
   {
     "@type": "Person",
-    "name": "Tom Harris"
+    "name": "Tom Cranstoun"
   },
   {
     "@type": "Person",
