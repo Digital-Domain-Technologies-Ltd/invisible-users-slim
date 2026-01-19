@@ -146,7 +146,7 @@ AI: The article was written by Tom Cranstoun and published on 15 March 2024. It 
 
 You: Is this person qualified to write about this topic?
 
-AI: Based on the author bio in the HTML, Tom Cranstoun is described as "Principal Consultant at Digital Domain Technologies with 25 years of Adobe Experience Manager expertise", which suggests relevant qualifications for the topic of AEM migration.
+AI: Based on the author bio in the HTML, Tom Cranstoun is described as "Principal Consultant at Digital Domain Technologies with 25 years of CMS experience", which suggests relevant qualifications for the topic of AEM migration.
 ```
 
 This checks if contextual information (author, dates, credentials) is properly marked up.
