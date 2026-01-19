@@ -1,8 +1,8 @@
-# Chapter 6: The Navigation Problem
+# Chapter 6: Navigation and Discovery
 
 ## How AI discovers your content
 
-Before AI can read your content, it needs to find it. This seems obvious but is often overlooked. You might have perfectly structured pages with excellent metadata, but if AI can't discover them or understand how they relate to each other, you've solved the wrong problem.
+Before AI can read your content, it needs to find it. This seems obvious but is often overlooked. You might have perfectly structured pages with excellent metadata, but if AI can't discover them or understand how they relate to each other, you need to optimize navigation and discovery.
 
 AI discovers content through three main mechanisms:
 
@@ -42,7 +42,7 @@ Your sitemap.xml tells AI (and search engines) what pages exist and how they're 
     <priority>0.6</priority>
   </url>
 </urlset>
-```
+```text
 
 The elements that matter:
 
@@ -140,7 +140,7 @@ If you have hundreds or thousands of pages, split into multiple sitemaps:
     <lastmod>2024-03-15</lastmod>
   </sitemap>
 </sitemapindex>
-```
+```text
 
 Each individual sitemap should stay under 50,000 URLs and 50MB uncompressed.
 
@@ -213,7 +213,7 @@ When AI follows links, the link text provides critical context. The href tells A
   <a href="/services/web">More</a>
   <a href="/services/consulting">Details</a>
 </nav>
-```
+```text
 
 Problems:
 
@@ -282,20 +282,20 @@ Your internal linking should create a semantic web that helps AI understand how 
 
 **Hub and spoke pattern:**
 
-```
+```text
 Homepage
-  ├── Services (hub page)
-  │   ├── Edge Delivery Services
-  │   ├── AEM Consulting
-  │   └── Training
-  ├── Case Studies (hub page)
-  │   ├── Automotive Industry
-  │   ├── Financial Services
-  │   └── Retail Sector
-  └── Blog (hub page)
-      ├── Latest Posts
-      ├── Guides
-      └── Technical Articles
+  +-- Services (hub page)
+  |   +-- Edge Delivery Services
+  |   +-- AEM Consulting
+  |   +-- Training
+  +-- Case Studies (hub page)
+  |   +-- Automotive Industry
+  |   +-- Financial Services
+  |   +-- Retail Sector
+  +-- Blog (hub page)
+      +-- Latest Posts
+      +-- Guides
+      +-- Technical Articles
 ```
 
 Each hub page links to its spokes. Each spoke links back to its hub and to related spokes.
@@ -343,7 +343,7 @@ Each hub page links to its spokes. Each spoke links back to its hub and to relat
     </ul>
   </aside>
 </main>
-```
+```text
 
 This creates multiple paths for discovery:
 
@@ -400,7 +400,7 @@ Breadcrumbs are more than a UX nicety—they tell AI exactly where a page sits i
     <li aria-current="page">Implementation Guide</li>
   </ol>
 </nav>
-```
+```text
 
 **With Schema.org markup:**
 
@@ -447,7 +447,7 @@ How you organize your site affects AI's ability to understand it. Here are patte
 
 **Topical clusters:**
 
-```
+```text
 /services/edge-delivery/
   - index.html (overview)
   - /implementation
@@ -466,7 +466,7 @@ Each topic has a hub page with related sub-pages. The URL structure makes relati
 
 **Content by type:**
 
-```
+```text
 /blog/
   - /guides/ (how-to content)
   - /case-studies/ (client work)
@@ -478,7 +478,7 @@ Clear categorization helps AI understand content purpose.
 
 **Date-based for news:**
 
-```
+```text
 /blog/2024/03/migration-guide
 /blog/2024/02/release-notes
 ```
@@ -487,7 +487,7 @@ Date in URL signals recency. AI can prioritize recent content for time-sensitive
 
 **Flat vs. nested:**
 
-```
+```html
 <!-- Too flat -->
 /services-edge-delivery-implementation
 /services-edge-delivery-migration
@@ -523,7 +523,7 @@ Your main navigation creates the mental model AI builds of your site organizatio
     <li><a href="/contact">Contact</a></li>
   </ul>
 </nav>
-```
+```text
 
 This tells AI:
 
@@ -594,7 +594,7 @@ Don't neglect footer links. They often contain important pages that aren't in ma
     </ul>
   </nav>
 </footer>
-```
+```text
 
 Notice:
 
@@ -651,7 +651,7 @@ AI can follow these links to build a more complete picture of your expertise and
 
 Your robots.txt file tells crawlers what they can and can't access:
 
-```
+```text
 User-agent: *
 Allow: /
 
@@ -680,7 +680,7 @@ Don't block:
 
 **Common mistake:**
 
-```
+```text
 User-agent: *
 Disallow: /services/  # Oops, blocking all services pages
 ```
@@ -734,7 +734,7 @@ Draw your site as a tree diagram based on navigation structure. Does the hierarc
 
 I worked with a financial services client whose navigation was organized around internal departments:
 
-```
+```text
 - Corporate Solutions
 - Retail Banking
 - Investment Management
@@ -745,7 +745,7 @@ This made sense internally but not to AI or customers. When someone asked "Does 
 
 We restructured to customer-facing categories:
 
-```
+```text
 - Personal Banking
   - Current Accounts
   - Savings

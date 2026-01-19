@@ -23,7 +23,7 @@ Semantic clarity is marking up something as what it is. A button uses `<button>`
 
 The critical insight: you can have both. They're not competing approaches—they're complementary layers.
 
-**Example: The pricing table**
+### Example: The pricing table**
 
 I worked with a SaaS company whose pricing page was driving good conversion from humans but was invisible to AI. When users asked chatbots "What does CompanyX charge for their pro plan?" the AI couldn't answer, despite the information being prominently displayed.
 
@@ -44,7 +44,7 @@ Here's what they had:
     </div>
   </div>
 </div>
-```
+```text
 
 Visually: perfect. The price was large, the features were clearly listed, the call-to-action stood out.
 
@@ -91,7 +91,7 @@ And humans? With CSS, they see exactly the same visual design as before. Nothing
 
 Your HTML structure tells AI what matters and how things relate. This goes beyond just using semantic elements—it's about the relationships between them.
 
-**Heading hierarchy as content outline**
+### Heading hierarchy as content outline**
 
 Think of your heading levels (h1 through h6) as a table of contents that AI can parse. This isn't just good practice—it's how AI builds a mental model of your content.
 
@@ -103,7 +103,7 @@ Think of your heading levels (h1 through h6) as a table of contents that AI can 
 <h2>What We Do</h2>
 <h3>Contact Information</h3>
 <h2>About Us</h2>
-```
+```text
 
 The heading levels jump around without logic. AI can't tell what's a major section versus a subsection. The structure suggests chaos.
 
@@ -124,7 +124,7 @@ Now there's a clear hierarchy. The h1 is the page title. Each h2 starts a major 
 
 This mirrors how a human would create a document outline—and that's not coincidental. Good document structure serves both audiences.
 
-**Lists show relationships**
+### Lists show relationships**
 
 When you have related items, use list elements. This seems obvious, but you'd be surprised how often developers use div elements with CSS to create visual lists.
 
@@ -142,7 +142,7 @@ When you have related items, use list elements. This seems obvious, but you'd be
   <li>Secure by default</li>
   <li>Easy to integrate</li>
 </ul>
-```
+```text
 
 The `ul` element tells AI: "these items are related members of a group." That's semantic information the div version doesn't convey.
 
@@ -159,7 +159,7 @@ When order matters, use `ol`:
 
 Now AI knows this is a sequence, not just a collection. If someone asks "What's the first step?" the AI can answer correctly.
 
-**Definition lists for key-value pairs**
+### Definition lists for key-value pairs**
 
 Here's an under-used HTML element that's perfect for certain content patterns:
 
@@ -177,7 +177,7 @@ Here's an under-used HTML element that's perfect for certain content patterns:
   <dt>Day rate</dt>
   <dd>£800</dd>
 </dl>
-```
+```text
 
 The `dl` (definition list) with `dt` (term) and `dd` (definition) creates explicit key-value relationships. AI can extract: "What's the location?" → "Manchester, UK". "When was it established?" → "1999".
 
@@ -201,7 +201,7 @@ Sometimes content structure isn't enough. You need to make explicit promises abo
 
 This is where metadata and structured data come in—not as SEO tricks, but as clear declarations of intent.
 
-**Schema.org: The lingua franca**
+### Schema.org: The lingua franca**
 
 Schema.org provides a shared vocabulary for describing content. When you mark up content with Schema.org terms, you're speaking a language AI already understands.
 
@@ -223,7 +223,7 @@ Here's a real example from a client in the automotive sector:
     Authorized Land Rover service center specializing in maintenance and repairs.
   </p>
 </article>
-```
+```text
 
 This microdata makes explicit promises:
 
@@ -235,7 +235,7 @@ This microdata makes explicit promises:
 
 When an AI encounters this, it doesn't have to guess or infer. The information is labeled and structured.
 
-**JSON-LD: The AI-friendly format**
+### JSON-LD: The AI-friendly format**
 
 While microdata works, JSON-LD (JavaScript Object Notation for Linked Data) is often easier to implement and maintain:
 
@@ -262,7 +262,7 @@ This sits in your page's `<head>` or anywhere in the `<body>`. It doesn't affect
 
 The advantage? You can implement structured data without touching your existing HTML. Your developers can maintain it separately from your design system.
 
-**Don't overdo it**
+### Don't overdo it**
 
 A word of caution: Schema.org has hundreds of types and properties. You don't need them all. Focus on:
 
@@ -281,7 +281,7 @@ Here's where dual-audience design gets interesting: sometimes you need to say th
 
 This feels wrong to developers trained in DRY (Don't Repeat Yourself), but remember—you're not serving just one consumer. You're serving humans who scan visually, screen readers that navigate by landmark, and AI that parses structure.
 
-**Visual + semantic + metadata**
+### Visual + semantic + metadata**
 
 Consider a product page:
 
@@ -321,7 +321,7 @@ Consider a product page:
     </button>
   </article>
 </main>
-```
+```text
 
 Look at what we're doing:
 
@@ -352,7 +352,7 @@ Look at what we're doing:
 
 This is redundancy with purpose. Each layer serves specific consumers without harming others.
 
-**The alt text principle**
+### The alt text principle**
 
 Alt text is a perfect example of useful redundancy. Visual users see the image. Screen reader users hear the alt text. AI parsers read the alt text.
 
@@ -367,11 +367,11 @@ Good alt text serves all audiences:
 ```html
 <img src="product-001.jpg" 
      alt="Standing desk raised to maximum height showing the motor housing and control panel">
-```
+```text
 
 The visual user gets additional context if the image fails to load. The screen reader user understands what's depicted. The AI parser knows what the image shows even though it can't see it.
 
-**Navigation patterns**
+### Navigation patterns**
 
 Navigation is another area where redundancy helps:
 

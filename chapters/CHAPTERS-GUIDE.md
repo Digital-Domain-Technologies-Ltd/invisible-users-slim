@@ -13,21 +13,21 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - The morning-after test
 - Real examples from client work
 
-**Chapter 2: How AI Reads** (to be created)
+### Chapter 2: How AI Reads
 
 - The three types of AI readers
-- DOM order vs visual layout  
+- DOM order vs visual layout
 - Token budgets and working memory
 - What gets lost without semantic HTML
 
-**Chapter 3: Guiding Principles** (to be created)
+### Chapter 3: Guiding Principles
 
 - Semantic clarity over visual clarity
 - Structure reveals intent
 - Metadata makes promises explicit
 - Redundancy serves different consumers
 
-**Chapter 4: Content Architecture** (to be created)
+### Chapter 4: Content Architecture
 
 - Article/blog post patterns
 - Product page patterns
@@ -36,7 +36,7 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Contact page patterns
 - Table patterns
 
-**Chapter 5: Metadata That Works** (to be created)
+### Chapter 5: Metadata That Works
 
 - Schema.org implementation
 - JSON-LD vs microdata
@@ -45,7 +45,7 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Article markup
 - FAQ markup
 
-**Chapter 6: The Navigation Problem** (to be created)
+### Chapter 6: Navigation and Discovery
 
 - XML sitemaps
 - Link text guidelines
@@ -53,7 +53,7 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Breadcrumbs
 - Site structure patterns
 
-**Chapter 7: The JavaScript Challenge** (to be created)
+### Chapter 7: The JavaScript Challenge
 
 - Progressive enhancement
 - Server-side rendering
@@ -70,7 +70,7 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Common testing mistakes
 - Implementation roadmap for testing
 
-**Chapter 9: Common Anti-Patterns** (to be created)
+### Chapter 9: Common Anti-Patterns
 
 - Visual-only information
 - Content in images
@@ -80,7 +80,7 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Hidden content without fallbacks
 - And more...
 
-**Chapter 10: Implementation Roadmap** (to be created)
+### Chapter 10: Implementation Roadmap
 
 - Phase 0: Assessment (Week 1)
 - Phase 1: Quick wins (Weeks 2-3)
@@ -90,7 +90,38 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Phase 5: Ongoing maintenance
 - Real-world case study
 
+### Chapter 11: Business Imperative
+
+- January 2026 platform race (Amazon, Microsoft, Google)
+- Real-world failure costs and invisible analytics
+- Stack Overflow case study (28% workforce reduction)
+- Revenue model collision mathematics
+- E-commerce validation (Microsoft Copilot Checkout)
+- First-mover advantage and network effects
+- Strategic assessment framework (4 exposure categories)
+- Implementation ROI with concrete examples
+- Protocol integration decision framework (ACP vs UCP vs Copilot)
+- Discovery-first principle (Tailwind CSS lesson)
+- Industry-specific implications
+- Compressed timeline and competitive urgency
+
 ## How to Use These Files
+
+### Reading Order
+
+**This book works from both ends.**
+
+**Business leaders and technical leads:** Start at the back
+
+- Chapter 11 (business imperative) - ROI, competitive urgency, strategic decisions
+- Chapter 10 (roadmap) - implementation planning
+- Work forwards through Chapters 2-9 as needed for technical depth
+
+**Developers, designers, QA engineers:** Start at the front
+
+- Chapters 2-4 (technical foundation and patterns)
+- Chapters 5-9 (metadata, navigation, JavaScript, testing, anti-patterns)
+- **Critical:** Read Chapter 11 before presenting implementation plans to leadership
 
 ### For Quick Reference
 
@@ -100,17 +131,17 @@ All chapters are available as separate downloadable files. Each chapter is self-
 
 ### For Complete Understanding
 
-- Read chapters 1-3 for foundation
+- Chapters 1-3 for foundation
 - Chapters 4-7 for implementation details
 - Chapters 8-9 for quality assurance
 - Chapter 10 for project planning
+- Chapter 11 for business justification (don't skip this)
 
 ### For Implementation
 
-- Start with Chapter 10 (roadmap)
-- Reference back to Chapters 4-7 as needed
-- Use Chapter 8 for testing
-- Avoid Chapter 9's anti-patterns
+- **Technical leads:** Chapter 11 → Chapter 10 → Chapters 4-7 → Chapter 8
+- **Developers:** Chapters 2-4 → Chapter 8 → Chapter 11 (for justification)
+- **Everyone:** Use Chapter 8 for testing, avoid Chapter 9's anti-patterns
 
 ## File Formats
 

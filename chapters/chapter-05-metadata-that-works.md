@@ -69,7 +69,7 @@ There are three ways to add Schema.org markup to your pages. Let me save you som
   <span itemprop="name">Tom Cranstoun</span>
   <span itemprop="jobTitle">Principal Consultant</span>
 </div>
-```
+```text
 
 **RDFa** also embeds in HTML, with different attribute names:
 
@@ -91,7 +91,7 @@ There are three ways to add Schema.org markup to your pages. Let me save you som
   "jobTitle": "Principal Consultant"
 }
 </script>
-```
+```text
 
 Why JSON-LD wins:
 
@@ -185,7 +185,7 @@ If you're a local business (restaurant, shop, service provider), use `LocalBusin
   ]
 }
 </script>
-```
+```text
 
 Now AI can answer: "What time does Manchester Motors close on Friday?" → "17:00" (5pm).
 
@@ -243,7 +243,7 @@ If your site has multiple authors, you can use an array:
     "name": "Jane Smith"
   }
 ]
-```
+```text
 
 ## Pattern: Product markup
 
@@ -317,7 +317,7 @@ If you have multiple offers (different sizes, colours, configurations), use an a
     "availability": "https://schema.org/InStock"
   }
 ]
-```
+```text
 
 ## Pattern: FAQ markup
 
@@ -415,7 +415,7 @@ Step-by-step guides benefit from explicit structure:
   ]
 }
 </script>
-```
+```text
 
 The `totalTime` uses ISO 8601 duration format:
 
@@ -446,15 +446,15 @@ If your heading hierarchy is clear and your semantic HTML is solid, adding metad
 
 The structure speaks for itself. Adding WebPage schema here adds no value.
 
-**2. You can't maintain it**
+### 2. You can't maintain it
 
 Stale metadata is worse than no metadata. If your prices change frequently and you can't keep Schema.org in sync, skip it. Wrong information is worse than no explicit information.
 
-**3. The content type doesn't matter for AI**
+### 3. The content type doesn't matter for AI
 
 Not everything needs to be machine-readable. Your privacy policy? Probably fine without structured data. Your terms of service? Unlikely anyone's asking AI about it.
 
-**4. You're adding metadata for metadata's sake**
+### 4. You're adding metadata for metadata's sake
 
 I've seen sites with Person schema for every mentioned name, Place schema for every location reference, Thing schema for... well, things. This is overkill. Focus on content that answers user queries.
 
@@ -462,11 +462,11 @@ I've seen sites with Person schema for every mentioned name, Place schema for ev
 
 Here's a practical challenge: how do you actually add this metadata to your pages?
 
-**Option 1: Manual JSON-LD**
+### Option 1: Manual JSON-LD**
 
 Write it by hand, paste it in. Fine for static sites with few pages. Doesn't scale.
 
-**Option 2: Template-based generation**
+### Option 2: Template-based generation**
 
 Your CMS or site generator creates JSON-LD from page fields:
 
@@ -484,11 +484,11 @@ const articleSchema = {
     "name": page.author.name
   }
 };
-```
+```text
 
 This works well if your CMS has structured fields for metadata.
 
-**Option 3: Build-time generation**
+### Option 3: Build-time generation**
 
 For static sites, generate JSON-LD during build:
 
@@ -512,7 +512,7 @@ const schema = generateArticleSchema(pageData);
 const scriptTag = `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
 ```
 
-**Option 4: Dynamic generation**
+### Option 4: Dynamic generation**
 
 For sites with user-generated content or frequent updates, generate JSON-LD server-side on each request:
 
@@ -537,7 +537,7 @@ app.get('/products/:id', async (req, res) => {
   
   res.render('product', { product, schema });
 });
-```
+```text
 
 Choose based on your site architecture and update frequency.
 
@@ -567,7 +567,7 @@ If the AI can extract the information correctly, your metadata works.
 
 ## Common mistakes
 
-**Mistake 1: Invalid JSON**
+### Mistake 1: Invalid JSON**
 
 ```json
 {
@@ -581,7 +581,7 @@ If the AI can extract the information correctly, your metadata works.
 
 JSON is strict. Missing commas, trailing commas, unescaped quotes all break parsing. Use a JSON validator or let your code editor highlight errors.
 
-**Mistake 2: Wrong data types**
+### Mistake 2: Wrong data types**
 
 ```json
 {
@@ -589,11 +589,11 @@ JSON is strict. Missing commas, trailing commas, unescaped quotes all break pars
   "ratingValue": "4.8 stars",  // Should be number 4.8
   "reviewCount": "127"  // Should be number 127 or string "127"
 }
-```
+```text
 
 Check Schema.org documentation for expected types. Price is text, ratings are numbers, dates are ISO strings.
 
-**Mistake 3: Incomplete required properties**
+### Mistake 3: Incomplete required properties**
 
 For Product schema, you need:
 
@@ -603,7 +603,7 @@ For Product schema, you need:
 
 Missing any of these and Google won't show rich results. The validator will tell you what's required.
 
-**Mistake 4: Mismatched content**
+### Mistake 4: Mismatched content**
 
 ```html
 <h1>Professional Standing Desk</h1>
@@ -617,7 +617,7 @@ Missing any of these and Google won't show rich results. The validator will tell
 
 Your metadata should match your visible content. Google may ignore structured data that contradicts what's on the page.
 
-**Mistake 5: Over-nesting**
+### Mistake 5: Over-nesting**
 
 ```json
 {
@@ -643,7 +643,7 @@ Your metadata should match your visible content. Google may ignore structured da
     }
   }
 }
-```
+```text
 
 This works but is unnecessarily complex for a product page. Keep it as simple as possible while including necessary information.
 
@@ -684,4 +684,4 @@ Next chapter tackles navigation patterns, sitemaps, internal linking, and the ov
 
 ---
 
-**Coming up in Chapter 6:** The navigation problem—helping AI discover and understand your site structure.
+**Coming up in Chapter 6:** Navigation and discovery—helping AI find and understand your site structure.

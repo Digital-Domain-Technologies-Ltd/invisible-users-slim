@@ -48,7 +48,7 @@ Here's what the AI sees in the HTML:
     </div>
   </div>
 </div>
-```
+```text
 
 The AI sees: four nested div elements with class names, two text strings of equal semantic weight, and two links. It has no idea which text is more important. The class names `heading-main` and `heading-sub` mean nothing—they're styling hooks for CSS, not semantic indicators.
 
@@ -82,7 +82,7 @@ Consider this common layout pattern:
 
 **Visual layout (what humans see):**
 
-```
+```text
 +----------------------------------+
 | [Navigation Menu]                |
 +----------------------------------+
@@ -106,7 +106,7 @@ Consider this common layout pattern:
   <h1>Main Article Title</h1>
   <p>Your actual content...</p>
 </main>
-```
+```text
 
 The developer put the sidebar before the main content in the HTML because it was easier with their grid system. Visually, with CSS, this looks fine to humans. But AI reads:
 
@@ -163,7 +163,7 @@ Let me be specific about what AI agents typically cannot perceive:
 
 ```html
 <div class="urgent">This requires immediate attention</div>
-```
+```text
 
 A human sees red text, bold weight, maybe a warning icon via CSS. The AI sees a div with some text. The urgency is invisible.
 
@@ -183,7 +183,7 @@ A parser fetching raw HTML gets an empty div. The actual product details never a
 ```html
 <div style="font-size: 48px">Big Important Text</div>
 <div style="font-size: 12px">Less important detail</div>
-```
+```text
 
 To AI, these are just two text strings. The size difference is meaningless. Use `h1` and `p` instead, and the hierarchy becomes semantic.
 
@@ -202,7 +202,7 @@ The AI knows an image exists. It doesn't know what the image shows. If that diag
 <script>
   drawComplexChart(salesData);
 </script>
-```
+```text
 
 The AI sees... a canvas element. Whatever chart you've drawn might as well not exist.
 
@@ -268,7 +268,7 @@ Humans could read this fine with CSS. AI just saw nested divs with no semantic m
     <strong>Requirements:</strong> Node.js 16 or higher
   </aside>
 </section>
-```
+```text
 
 Now:
 

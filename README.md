@@ -29,6 +29,13 @@ This is the streamlined "slim" version of The Invisible Users, focused on:
 - **Anti-patterns** to avoid
 - **Testing methodologies** for validation
 - **Implementation roadmap** with priority levels
+- **Business justification** for technical teams
+
+**This book works from both ends:**
+
+- Business leaders and technical leads start at the back (Chapters 11→10) for ROI and planning
+- Developers start at the front (Chapters 2-4) for technical patterns
+- Everyone reads Chapter 11 before presenting implementation plans to leadership
 
 ## Status
 
@@ -37,6 +44,11 @@ This is the streamlined "slim" version of The Invisible Users, focused on:
 **Current state:** Complete and ready for publication
 
 ## Contents
+
+### Front Matter
+
+- **Cover page** - Professional cover with distribution notice
+- **Preface** - How to use this book and reading guidance
 
 ### Chapters
 
@@ -50,6 +62,7 @@ This is the streamlined "slim" version of The Invisible Users, focused on:
 8. **Testing** - Testing methodologies for AI readability validation
 9. **Anti-Patterns** - Common mistakes and fixes
 10. **Implementation** - Practical roadmap
+11. **Business Imperative** - ROI, competitive urgency, and strategic decisions
 
 ### Supporting Materials
 
@@ -63,8 +76,20 @@ This book is derived from the comprehensive "Bible" version but focuses on:
 - **What to implement** (not why)
 - **How to implement** (step-by-step patterns)
 - **Priority-based approach** (not time-based)
+- **Business justification** for technical teams (Chapter 11)
 
-For complete context including business, legal, and strategic perspectives, see [The Bible](../bible/).
+For complete context including business models, organisational change, legal implications, and strategic positioning, see [The Bible](../bible/).
+
+## Live Resources
+
+Appendices, code examples, and industry news are shared between all books and continuously updated online:
+
+- **Live appendices:** <https://allabout.network/invisible-users/>
+- **Industry news:** <https://allabout.network/invisible-users/news.html>
+- **Pattern library:** Production-ready implementation examples
+- **Protocol updates:** Latest developments in ACP, UCP, and Copilot integration
+
+These resources are maintained separately from the book content to ensure readers always have access to current information as the AI agent ecosystem evolves.
 
 ## Shared Resources
 
@@ -110,10 +135,17 @@ This streamlined version is designed for:
 
 - **Frontend developers** implementing patterns immediately
 - **UX designers** understanding AI interaction models
-- **Technical leads** planning implementation roadmaps
+- **Technical leads** planning implementation roadmaps and justifying resource allocation
 - **QA engineers** testing AI compatibility
+- **Business leaders** evaluating ROI and competitive positioning (Chapter 11)
 
-If you need business case justification, legal context, or strategic guidance, start with [The Bible](../bible/).
+**Reading guidance:**
+
+- **Technical staff:** Start at the front (Chapters 2-4) for patterns, read Chapter 11 for business justification
+- **Business leaders:** Start at the back (Chapters 11→10) for ROI and planning, skim forward for technical depth
+- **Everyone:** Chapter 11 provides essential ROI calculations and strategic context
+
+If you need comprehensive business case analysis, legal context, or strategic guidance beyond implementation planning, see [The Bible](../bible/).
 
 ## Implementation Approach
 

@@ -30,7 +30,7 @@ Articles are where many sites get their first AI traffic. Someone asks a questio
     <!-- More sections -->
   </div>
 </div>
-```
+```text
 
 This might look fine visually, but AI sees:
 
@@ -138,7 +138,7 @@ Product pages are where the economic stakes are highest. If AI can't parse your 
     <div class="product-name">Wireless Keyboard</div>
     <div class="product-price">£79.99</div>
     <div class="product-rating">
-      <span class="stars">★★★★★</span>
+      <span class="stars">5 stars</span>
       <span class="review-count">127 reviews</span>
     </div>
   </div>
@@ -151,7 +151,7 @@ Product pages are where the economic stakes are highest. If AI can't parse your 
     </div>
   </div>
 </div>
-```
+```text
 
 Problems:
 
@@ -278,7 +278,7 @@ Navigation is interesting because it serves multiple purposes: humans use it to 
   <a href="/about">About</a>
   <a href="/contact">Contact</a>
 </div>
-```
+```text
 
 Issues:
 
@@ -329,7 +329,7 @@ Improvements:
 - Progressive enhancement adds hover/click behaviour
 - Screen readers can navigate effectively
 
-**Bonus: Breadcrumbs**
+### Bonus: Breadcrumbs**
 
 While we're on navigation, breadcrumbs are particularly valuable for AI:
 
@@ -354,7 +354,7 @@ While we're on navigation, breadcrumbs are particularly valuable for AI:
     </li>
   </ol>
 </nav>
-```
+```text
 
 This tells AI:
 
@@ -421,7 +421,7 @@ This is readable but provides no semantic structure.
     </div>
   </article>
 </section>
-```
+```text
 
 This pattern:
 
@@ -539,7 +539,7 @@ Problems:
     </form>
   </section>
 </main>
-```
+```text
 
 This provides:
 
@@ -623,7 +623,7 @@ AI sees rows and cells but doesn't know which row is headers versus data.
     </tr>
   </tbody>
 </table>
-```
+```text
 
 Now:
 

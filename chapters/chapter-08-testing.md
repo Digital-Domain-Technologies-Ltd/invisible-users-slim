@@ -53,7 +53,7 @@ AI: The key features include:
 You: Is it in stock?
 
 AI: Yes, according to the page it is currently in stock.
-```
+```text
 
 This tells you the AI can extract basic information. Now test edge cases:
 
@@ -102,7 +102,7 @@ AI: {
     "Whisper-quiet motor"
   ]
 }
-```
+```text
 
 If the AI can do this accurately, your structured data is working. If it gets confused or misses information, you need to improve your markup.
 
@@ -147,7 +147,7 @@ AI: The article was written by Tom Cranstoun and published on 15 March 2024. It 
 You: Is this person qualified to write about this topic?
 
 AI: Based on the author bio in the HTML, Tom Cranstoun is described as "Principal Consultant at Digital Domain Technologies with 25 years of CMS experience", which suggests relevant qualifications for the topic of AEM migration.
-```
+```text
 
 This checks if contextual information (author, dates, credentials) is properly marked up.
 
@@ -249,7 +249,7 @@ This simulates what a browser-based AI agent sees after JavaScript execution.
   schemaData: [],
   linkCount: 3
 }
-```
+```text
 
 This suggests JavaScript hasn't finished loading or the page structure is broken.
 
@@ -297,7 +297,7 @@ const errors = validate(schema);
 if (errors.length > 0) {
   console.log('Schema errors:', errors);
 }
-```
+```text
 
 ## The comparison test
 
@@ -336,7 +336,7 @@ Answer: The main features are:
 - Whisper-quiet motor
 - Weight capacity of 80kg
 - Dimensions: 120cm × 60cm, height adjustable from 70cm to 120cm
-```
+```text
 
 Document this difference. It shows stakeholders the concrete impact of AI optimization work.
 
@@ -436,7 +436,7 @@ runTests().then(results => {
   
   let allPassed = true;
   results.forEach(result => {
-    const status = result.passed ? '✓ PASS' : '✗ FAIL';
+    const status = result.passed ? '[PASS]' : '[FAIL]';
     console.log(`${status}: ${result.url}`);
     
     if (!result.passed) {
@@ -456,7 +456,7 @@ Run this as part of your deployment process or on a schedule:
 
 ```bash
 node test-ai-readability.js
-```
+```text
 
 ## The sitemap coverage test
 
@@ -553,7 +553,7 @@ async function auditLinkText(url) {
 }
 
 auditLinkText('https://example.com').catch(console.error);
-```
+```text
 
 ## Mobile AI readability
 
@@ -658,7 +658,7 @@ schedule.scheduleJob('0 9 * * 1', async function() {
     });
   }
 });
-```
+```text
 
 **Google Search Console monitoring:**
 

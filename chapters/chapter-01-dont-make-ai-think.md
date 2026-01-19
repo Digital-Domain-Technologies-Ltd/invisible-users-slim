@@ -8,6 +8,8 @@ These visitors don't behave like humans. They don't admire your hero image, they
 
 Welcome to the era of invisible users.
 
+**A note on perspective:** This book isn't a criticism of AI technology. I genuinely admire what these systems have achieved - the ability to generate coherent responses, understand context, and complete complex tasks across countless domains represents remarkable engineering. My focus isn't on pointing out AI failures or edge cases. Instead, this book explores how better-structured websites create better outcomes for everyone. When we provide well-crafted inputs (semantic HTML, explicit metadata, clear state management) and AI creators implement appropriate guardrails, the results improve dramatically. Hallucinations decrease. Citations become accurate. Commerce transactions complete successfully. This is about collaboration, not criticism.
+
 ## Who are they?
 
 When I talk about AI agents, I'm not describing some distant future. I'm talking about systems working right now:

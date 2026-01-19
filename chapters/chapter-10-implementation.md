@@ -28,13 +28,15 @@ This approach:
 - Lets you learn what works for your specific site
 - Keeps the project manageable
 
-## Phase 0: Assessment (Week 1)
+## Phase 0: Assessment
 
 Before you change anything, understand what you're working with.
 
 **Tasks:**
 
-**1. Inventory high-value pages (2 hours)**
+### 1. Inventory high-value pages
+
+#### Priority: Foundation (complete before other work) (Task 1)
 
 List your 15-25 most important pages:
 
@@ -47,7 +49,9 @@ List your 15-25 most important pages:
 
 Don't try to fix 500 pages. Fix the 20 that matter most.
 
-**2. Quick readability audit (4 hours)**
+### 2. Quick readability audit
+
+#### Priority: Foundation (Task 2)
 
 For each page, check:
 
@@ -60,7 +64,7 @@ For each page, check:
 
 Create a simple spreadsheet:
 
-```
+```json
 Page | Content in HTML | Has h1 | Has Schema.org | Good links | Has alt text
 -----|-----------------|--------|----------------|------------ |-------------
 Homepage | Yes | Yes | No | No | Partial
@@ -68,7 +72,9 @@ Homepage | Yes | Yes | No | No | Partial
 /products/desk | Yes | Yes | No | No | No
 ```
 
-**3. Run the morning-after test (2 hours)**
+### 3. Run the morning-after test
+
+#### Priority: Foundation (Task 3)
 
 Pick 5 representative pages. For each:
 
@@ -79,14 +85,18 @@ Pick 5 representative pages. For each:
 
 Document what works and what doesn't.
 
-**4. Check technical foundations (1 hour)**
+### 4. Check technical foundations
+
+#### Priority: Foundation (Task 4)
 
 - Does sitemap.xml exist?
 - Is robots.txt blocking important content?
 - Does the site work with JavaScript disabled?
 - Are there accessibility issues? (Run Lighthouse)
 
-**5. Prioritize by impact and effort (1 hour)**
+### 5. Prioritize by impact and effort
+
+#### Priority: Foundation (Task 5)
 
 Score each page:
 
@@ -98,15 +108,15 @@ Focus on high impact, low effort items first.
 
 **Deliverable:** A prioritized list of pages with specific issues documented.
 
-**Time investment:** 10 hours
-
-## Phase 1: Quick Wins (Weeks 2-3)
+## Phase 1: Quick Wins
 
 Fix high-impact, low-effort problems. These show immediate results and build momentum.
 
 **Tasks:**
 
-**1. Add Schema.org to key pages (12 hours)**
+### 1. Add Schema.org to key pages
+
+#### Priority 1: Critical Quick Win (Task 1)
 
 Start with:
 
@@ -126,7 +136,9 @@ Use JSON-LD. Copy the patterns from Chapter 5. Each page takes 30-60 minutes onc
 5. Validate with Google's Rich Results Test
 6. Deploy
 
-**2. Fix heading hierarchy (8 hours)**
+### 2. Fix heading hierarchy
+
+#### Priority 1: Critical Quick Win (Task 2)
 
 For each priority page:
 
@@ -137,7 +149,9 @@ For each priority page:
 
 This is often just changing div classes to proper heading elements and adjusting CSS.
 
-**3. Improve link text (4 hours)**
+### 3. Improve link text
+
+#### Priority 1: Critical Quick Win (Task 3)
 
 Find all generic links:
 
@@ -148,7 +162,7 @@ document.querySelectorAll('a').forEach(a => {
     console.log(text, '→', a.href);
   }
 });
-```
+```text
 
 Replace with descriptive text:
 
@@ -156,7 +170,9 @@ Replace with descriptive text:
 - "Click here" → "View our product catalogue"
 - "Read more" → "Read the full migration guide"
 
-**4. Add alt text to images (4 hours)**
+### 4. Add alt text to images
+
+#### Priority 1: Critical Quick Win (Task 4)
 
 Audit images:
 
@@ -175,21 +191,21 @@ Add descriptive alt text:
 
 **Impact:** These changes make your content immediately more readable to AI without changing how pages look to humans.
 
-**Time investment:** 28 hours total
-
-**Expected results after 2-3 weeks:**
+**Expected results:**
 
 - Schema.org validation passes on key pages
 - Morning-after test shows AI can extract key information
 - Accessibility scores improve (Lighthouse)
 
-## Phase 2: Structural Improvements (Weeks 4-6)
+## Phase 2: Structural Improvements
 
 Address deeper structural issues.
 
 **Tasks:**
 
-**1. Create or update sitemap.xml (4 hours)**
+### 1. Create or update sitemap.xml
+
+#### Priority 2: Essential Improvement (Task 1)
 
 If you don't have a sitemap, create one. If you do, ensure it's current.
 
@@ -215,11 +231,13 @@ ${pages.map(p => `  <url>
 </urlset>`;
 
 fs.writeFileSync('sitemap.xml', xml);
-```
+```text
 
 For dynamic sites, generate from your database/CMS.
 
-**2. Add semantic navigation elements (6 hours)**
+### 2. Add semantic navigation elements
+
+#### Priority 2: Essential Improvement (Task 2)
 
 Replace divs with proper semantic elements:
 
@@ -235,7 +253,9 @@ Replace divs with proper semantic elements:
 <aside>...</aside>
 ```
 
-**3. Implement breadcrumbs (6 hours)**
+### 3. Implement breadcrumbs
+
+#### Priority 2: Essential Improvement (Task 3)
 
 Add breadcrumbs to key sections:
 
@@ -252,9 +272,11 @@ Add breadcrumbs to key sections:
     </li>
   </ol>
 </nav>
-```
+```text
 
-**4. Server-side rendering for critical paths (12-20 hours)**
+### 4. Server-side rendering for critical paths
+
+#### Priority 2: Essential Improvement (Task 4)
 
 If your site is JavaScript-heavy, implement SSR for public pages.
 
@@ -293,7 +315,9 @@ Focus on:
 
 Authenticated areas can stay client-side.
 
-**5. Progressive enhancement for interactive features (8 hours)**
+### 5. Progressive enhancement for interactive features
+
+#### Priority 2: Essential Improvement (Task 5)
 
 Make interactive features work without JavaScript:
 
@@ -314,24 +338,25 @@ Make interactive features work without JavaScript:
   // JavaScript hides and adds toggle functionality
   // But content is in HTML from the start
 </script>
-```
+```text
 
-**Time investment:** 40-48 hours
 
-**Expected results after 6 weeks:**
+**Expected results:**
 
 - All priority pages discoverable via sitemap
 - Content accessible without JavaScript
 - Clear site structure visible to AI
 - Breadcrumbs showing page relationships
 
-## Phase 3: Content Patterns (Weeks 7-8)
+## Phase 3: Content Patterns
 
 Standardize content patterns across your site.
 
 **Tasks:**
 
-**1. Implement proper article structure (8 hours)**
+### 1. Implement proper article structure
+
+#### Priority 3: Content Optimization (Task 1)
 
 Create templates for blog posts:
 
@@ -351,7 +376,9 @@ Create templates for blog posts:
 </article>
 ```
 
-**2. Convert visual lists to semantic lists (4 hours)**
+### 2. Convert visual lists to semantic lists
+
+#### Priority 3: Content Optimization (Task 2)
 
 Find divs that are really lists:
 
@@ -369,9 +396,11 @@ Find divs that are really lists:
   <li>Secure by default</li>
   <li>Easy integration</li>
 </ul>
-```
+```text
 
-**3. Add definition lists for key-value pairs (4 hours)**
+### 3. Add definition lists for key-value pairs
+
+#### Priority 3: Content Optimization (Task 3)
 
 Replace custom markup with `<dl>`:
 
@@ -391,7 +420,9 @@ Replace custom markup with `<dl>`:
 </dl>
 ```
 
-**4. Fix form labels (4 hours)**
+### 4. Fix form labels
+
+#### Priority 3: Content Optimization (Task 4)
 
 Ensure every input has a label:
 
@@ -402,9 +433,11 @@ Ensure every input has a label:
 <!-- After -->
 <label for="name">Your Name</label>
 <input type="text" id="name" name="name">
-```
+```text
 
-**5. Add ARIA labels where needed (4 hours)**
+### 5. Add ARIA labels where needed
+
+#### Priority 3: Content Optimization (Task 5)
 
 For elements that need clarification:
 
@@ -419,7 +452,9 @@ For elements that need clarification:
 </a>
 ```
 
-**6. Improve table structure (4 hours)**
+### 6. Improve table structure
+
+#### Priority 3: Content Optimization (Task 6)
 
 Add proper table semantics:
 
@@ -439,23 +474,24 @@ Add proper table semantics:
     </tr>
   </tbody>
 </table>
-```
+```text
 
-**Time investment:** 28 hours
 
-**Expected results after 8 weeks:**
+**Expected results:**
 
 - Consistent semantic patterns across pages
 - Forms fully accessible and AI-readable
 - Data relationships explicit (lists, tables)
 
-## Phase 4: Testing and Validation (Week 9)
+## Phase 4: Testing and Validation
 
 Verify everything works.
 
 **Tasks:**
 
-**1. Set up automated testing (8 hours)**
+### 1. Set up automated testing
+
+#### Priority 4: Validation **Priority 4: Validation & Monitoring** Monitoring (Task 1)
 
 Create test suite (from Chapter 8):
 
@@ -471,7 +507,9 @@ const tests = [
 // Run tests, generate report
 ```
 
-**2. Manual validation of priority pages (8 hours)**
+### 2. Manual validation of priority pages
+
+#### Priority 4: Validation **Priority 4: Validation & Monitoring** Monitoring (Task 2)
 
 For each priority page:
 
@@ -483,7 +521,7 @@ For each priority page:
 
 Document results in spreadsheet:
 
-```
+```text
 Page | Morning-after | Schema valid | Lighthouse | JS disabled
 -----|---------------|--------------|------------|-------------
 Homepage | Pass | Pass | 95 | Pass
@@ -491,7 +529,9 @@ Homepage | Pass | Pass | 95 | Pass
 /products/desk | Pass | Pass | 98 | Pass
 ```
 
-**3. Create documentation and standards (4 hours)**
+### 3. Create documentation and standards
+
+#### Priority 4: Validation **Priority 4: Validation & Monitoring** Monitoring (Task 3)
 
 Document your patterns:
 
@@ -514,19 +554,18 @@ Document your patterns:
 - Include Schema.org Article markup
 - Author and date required
 - Logical heading hierarchy (h1 → h2 → h3)
-```
+```text
 
 Share with your team so new content follows the patterns.
 
-**Time investment:** 20 hours
 
-**Expected results after 9 weeks:**
+**Expected results:**
 
 - Automated tests catching regressions
 - All priority pages validated
 - Team has documentation to maintain standards
 
-## Phase 5: Ongoing Maintenance (Week 10+)
+## Phase 5: Ongoing Maintenance
 
 Keep your improvements intact.
 
@@ -538,14 +577,14 @@ Keep your improvements intact.
 2. Check for Schema.org errors in Search Console
 3. Spot-check new pages added this week
 
-**Monthly (2 hours):**
+**Monthly:**
 
 1. Audit 5-10 recent pages for compliance
 2. Run morning-after test on new content
 3. Check sitemap is current
 4. Review accessibility scores
 
-**Quarterly (4 hours):**
+**Quarterly:**
 
 1. Full audit of all priority pages
 2. Update documentation if patterns have evolved
@@ -559,7 +598,6 @@ Keep your improvements intact.
 - CMS templates generate proper markup
 - Build process includes validation
 
-**Time investment:** ~2-3 hours per month
 
 ## The real-world case study
 
@@ -578,16 +616,16 @@ When someone asked an AI "Where can I get my Land Rover serviced near Birmingham
 
 **The implementation:**
 
-We followed this roadmap over 12 weeks (slightly longer than the 10-week plan due to complexity):
+We followed this roadmap progressively:
 
-**Weeks 1-2: Assessment**
+**Phase 0: Assessment**
 
 - Audited 25 high-value pages
 - Identified top conversion paths
 - Documented current AI visibility (basically zero)
 - Got stakeholder buy-in with morning-after test demo
 
-**Weeks 3-4: Quick wins**
+**Phase 1: Quick Wins**
 
 - Added Schema.org to homepage (LocalBusiness)
 - Added Product schema to top 10 vehicle service pages
@@ -595,21 +633,21 @@ We followed this roadmap over 12 weeks (slightly longer than the 10-week plan du
 - Fixed heading hierarchy (was all over the place)
 - Added alt text to all images
 
-**Weeks 5-8: Structural changes**
+**Phase 2: Structural Improvements**
 
 - Implemented Next.js SSR for public pages
 - Created dynamic sitemap generation
 - Added breadcrumb navigation
 - Kept client-side rendering for dealer portal (authenticated area)
 
-**Weeks 9-10: Content patterns**
+**Phase 3: Content Patterns**
 
 - Created templates for service pages
 - Standardized location pages
 - Implemented proper navigation structure
 - Added semantic HTML throughout
 
-**Weeks 11-12: Testing and launch**
+**Phase 4: Testing and Validation**
 
 - Automated test suite
 - Manual validation
@@ -618,8 +656,8 @@ We followed this roadmap over 12 weeks (slightly longer than the 10-week plan du
 
 **The investment:**
 
-- 85 hours of consulting time (me)
-- 40 hours of developer time (their team)
+- Consulting time (me)
+- Developer time (their team)
 - Total cost: ~£12,000
 
 **The results (after 3 months):**
@@ -662,9 +700,9 @@ Don't try to fix 1,000 pages at once. Fix 20, measure results, then expand based
 
 ## Handling common constraints
 
-**Constraint 1: "We don't have budget for a full implementation"**
+### Constraint 1: "We don't have budget for a full implementation"**
 
-Do Phase 0 and Phase 1 only (Weeks 1-3, 28 hours).
+Do Phase 0 and Phase 1 only.
 
 This gives you:
 
@@ -675,7 +713,7 @@ This gives you:
 
 That's 70% of the benefit for 30% of the effort.
 
-**Constraint 2: "We can't change our JavaScript framework"**
+### Constraint 2: "We can't change our JavaScript framework"**
 
 Focus on what you can control:
 
@@ -688,7 +726,7 @@ Focus on what you can control:
 
 You don't need to rebuild. You can improve what exists.
 
-**Constraint 3: "Our CMS makes it hard to add Schema.org"**
+### Constraint 3: "Our CMS makes it hard to add Schema.org"**
 
 Options:
 
@@ -699,7 +737,7 @@ Options:
 
 There's always a way. It might not be elegant, but it works.
 
-**Constraint 4: "We have thousands of pages"**
+### Constraint 4: "We have thousands of pages"**
 
 Fix the top 20 pages first. Then:
 
@@ -710,12 +748,12 @@ Fix the top 20 pages first. Then:
 
 You'll never fix everything, and you don't need to. The 80/20 rule applies: 20% of pages generate 80% of value.
 
-**Constraint 5: "Our development team is fully committed"**
+### Constraint 5: "Our development team is fully committed"**
 
 Options:
 
 1. Hire a contractor for the initial implementation
-2. Make it a gradual background task (1-2 hours/week)
+2. Make it a gradual background task
 3. Build it into regular feature work
 4. Allocate time during quiet periods
 
@@ -816,45 +854,39 @@ What not to do:
 
 Here's the complete timeline at a glance:
 
-**Week 1: Assessment**
+**Phase 0: Assessment**
 
-- 10 hours
 - Deliverable: Prioritized list of 15-25 pages with issues
 
-**Weeks 2-3: Quick wins**
+**Phase 1: Quick Wins**
 
-- 28 hours
 - Deliverable: Schema.org, headings, links, alt text on priority pages
 
-**Weeks 4-6: Structural improvements**
+**Phase 2: Structural Improvements**
 
-- 40-48 hours
 - Deliverable: Sitemap, semantic HTML, SSR, progressive enhancement
 
-**Weeks 7-8: Content patterns**
+**Phase 3: Content Patterns**
 
-- 28 hours
 - Deliverable: Standardized templates, consistent semantic markup
 
-**Week 9: Testing and validation**
+**Phase 4: Testing and Validation**
 
-- 20 hours
 - Deliverable: Automated tests, validation, documentation
 
-**Week 10+: Ongoing maintenance**
+**Phase 5: Ongoing Maintenance**
 
-- 2-3 hours/month
 - Deliverable: Sustained quality, continuous improvement
 
-**Total initial investment:** 85-115 hours over 9 weeks
+**Total initial investment:** Priority 1-4 phases
 
-**Ongoing investment:** 2-3 hours per month
+**Ongoing investment:** Priority: Ongoing phase
 
-**Expected ROI:** Visible within 3-6 months, compounds over time
+**Expected ROI:** Compounds over time as implementation progresses
 
 ## Final thoughts
 
-This roadmap is based on real client work. The timings are realistic. The results are achievable.
+This roadmap is based on real client work. The results are achievable.
 
 You don't need to be perfect. You need to be better than you are now, and better than your competitors.
 
@@ -889,4 +921,4 @@ Good luck.
 
 ---
 
-**End of "Don't Make AI Think"**
+### End of "Don't Make AI Think"**

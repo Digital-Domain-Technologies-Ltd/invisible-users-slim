@@ -32,7 +32,7 @@ Information conveyed purely through visual styling, without semantic backing.
     <div class="tier-price">£299</div>
   </div>
 </div>
-```
+```text
 
 ```css
 .tier-featured {
@@ -77,7 +77,7 @@ Make the recommendation explicit in HTML:
     <span class="period">/month</span>
   </article>
 </section>
-```
+```text
 
 Now:
 
@@ -124,7 +124,7 @@ A client had their entire service offering described in an infographic. Beautifu
 
 ```html
 <img src="our-services-infographic.png" alt="Our services">
-```
+```text
 
 The image contained:
 
@@ -209,7 +209,7 @@ You can style `.services-text` to be visually hidden if you want users to see on
   <a href="tel:+441611234567">0161 123 4567</a><br>
   <a href="mailto:info@example.com">info@example.com</a>
 </address>
-```
+```text
 
 ## Anti-pattern 3: Generic link text
 
@@ -283,7 +283,7 @@ Make link text self-descriptive:
   </p>
   <a href="/services/training">View training programmes and support options</a>
 </section>
-```
+```text
 
 Each link now describes its destination clearly.
 
@@ -329,7 +329,7 @@ Headings used for styling rather than structure, creating illogical hierarchies.
   <h4>About Us</h4>  <!-- h4 without h2 or h3 -->
   <p>Founded in 1999...</p>
 </div>
-```
+```text
 
 This hierarchy makes no sense:
 
@@ -386,7 +386,7 @@ If you need different heading sizes for visual design, use CSS:
 .large-heading {
   font-size: 2rem; /* h1 size */
 }
-```
+```text
 
 ```html
 <h2 class="small-heading">This looks like h3 but is semantically h2</h2>
@@ -403,7 +403,7 @@ Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'))
     const indent = '  '.repeat(parseInt(level) - 1);
     console.log(`${indent}${h.tagName}: ${h.textContent.trim()}`);
   });
-```
+```text
 
 The output should show a logical tree structure.
 
@@ -453,7 +453,7 @@ Put navigation in HTML, enhance with JavaScript if needed:
   // JavaScript can still enhance this (dropdowns, mobile menu, etc.)
   // But the base navigation works without it
 </script>
-```
+```text
 
 ## Anti-pattern 6: Hidden content with no fallback
 
@@ -528,7 +528,7 @@ Make content visible by default, hide with JavaScript as enhancement:
     });
   });
 </script>
-```
+```text
 
 Now:
 
@@ -586,7 +586,7 @@ app.get('/sitemap.xml', async (req, res) => {
   res.header('Content-Type', 'application/xml');
   res.send(xml);
 });
-```
+```text
 
 For static sites, regenerate during build:
 
@@ -644,7 +644,7 @@ Schema.org markup that contradicts visible content or is incomplete.
   }
 }
 </script>
-```
+```text
 
 Problems:
 
@@ -697,7 +697,7 @@ Form inputs identified only by placeholder text.
   <textarea placeholder="Your message"></textarea>
   <button>Send</button>
 </form>
-```
+```text
 
 Problems:
 
@@ -770,7 +770,7 @@ Tables used for layout or data tables without proper structure.
     </td>
   </tr>
 </table>
-```
+```text
 
 This hasn't been acceptable since CSS gained layout capabilities. Use flexbox or grid instead.
 
@@ -830,7 +830,7 @@ Use semantic table elements:
     </tr>
   </tbody>
 </table>
-```
+```text
 
 Now AI can answer: "What's the price of the Professional plan?" by finding the row where the row header is "Professional" and extracting the price cell.
 
@@ -869,7 +869,7 @@ Pull content server-side and render it in your HTML:
     <p>Digital Domain welcomes three new consultants...</p>
   </article>
 </section>
-```
+```text
 
 If you must use an iframe (embedded maps, video players), ensure critical information is also in HTML:
 
@@ -908,7 +908,7 @@ Important information only available as PDF downloads.
 <h2>Our Services</h2>
 <p>Download our services brochure to learn more.</p>
 <a href="/brochure.pdf">Download PDF (2.3 MB)</a>
-```
+```text
 
 AI might not parse PDFs, or might parse them poorly if they're scanned images.
 
@@ -976,7 +976,7 @@ Content that changes without user interaction, making specific information hard 
     <p>"Outstanding work" - Client C</p>
   </div>
 </div>
-```
+```text
 
 The carousel auto-rotates every 3 seconds. AI fetching the page might only see one testimonial, missing the others.
 
