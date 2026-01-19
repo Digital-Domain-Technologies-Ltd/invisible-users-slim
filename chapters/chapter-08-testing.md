@@ -34,7 +34,7 @@ The AI should answer accurately using only the HTML you pasted. If it can't, you
 
 **Example conversation:**
 
-```
+```text
 You: [paste HTML of product page]
 
 You: What is this page about?
@@ -57,7 +57,7 @@ AI: Yes, according to the page it is currently in stock.
 
 This tells you the AI can extract basic information. Now test edge cases:
 
-```
+```text
 You: What's the warranty period?
 
 AI: I don't see warranty information in the HTML provided.
@@ -79,9 +79,9 @@ Each processes content slightly differently. If all three can extract the inform
 
 Go beyond simple questions. Test if AI can extract structured information:
 
-**Test 1: Data extraction**
+### Test 1: Data extraction
 
-```
+```text
 You: [paste product page HTML]
 
 You: Extract the following information in JSON format:
@@ -106,9 +106,9 @@ AI: {
 
 If the AI can do this accurately, your structured data is working. If it gets confused or misses information, you need to improve your markup.
 
-**Test 2: Relationship understanding**
+### Test 2: Relationship understanding
 
-```
+```text
 You: [paste service page HTML]
 
 You: What services does this company offer, and how are they organized?
@@ -135,9 +135,9 @@ The page uses a clear hierarchy with h2 headings for main services and h3 headin
 
 This tests whether your heading hierarchy and content organization are clear.
 
-**Test 3: Context awareness**
+### Test 3: Context awareness
 
-```
+```text
 You: [paste blog post HTML]
 
 You: Who wrote this article and when was it published?
@@ -258,23 +258,24 @@ This suggests JavaScript hasn't finished loading or the page structure is broken
 Google provides free tools for validating Schema.org markup:
 
 **Rich Results Test:**  
-https://search.google.com/test/rich-results
+<https://search.google.com/test/rich-results>
 
 Paste your URL or HTML snippet. Google will:
+
 - Parse Schema.org markup
 - Show what rich results are eligible
 - Flag errors and warnings
 
 **Common errors caught:**
 
-```
+```text
 Error: Missing required field "price"
 Warning: Recommended field "image" is missing
 Error: Invalid date format - use ISO 8601
 ```
 
 **Schema.org Validator:**  
-https://validator.schema.org/
+<https://validator.schema.org/>
 
 More permissive than Google's tool. Good for checking if your JSON-LD is syntactically valid, even if it won't trigger rich results.
 
@@ -304,7 +305,7 @@ Before and after testing shows the impact of your improvements:
 
 **Before optimization:**
 
-```
+```text
 Test: Morning-after with product page HTML
 
 Question: What is the price?
@@ -319,7 +320,7 @@ Answer: I can see some text that appears to describe features, but they're not c
 
 **After optimization:**
 
-```
+```text
 Test: Morning-after with optimized product page HTML
 
 Question: What is the price?
@@ -494,6 +495,7 @@ testSitemapCoverage().catch(console.error);
 ```
 
 This verifies:
+
 - Your sitemap is accessible
 - Listed URLs are reachable
 - Each page has basic semantic structure
@@ -594,6 +596,7 @@ async function testMobileReadability(url) {
 ```
 
 Check if:
+
 - Content is visible on mobile viewports
 - Headings aren't hidden
 - Main content isn't pushed below the fold by oversized headers
@@ -612,9 +615,10 @@ Browser extension that audits accessibility. Issues it catches that also affect 
 - Missing ARIA labels
 
 **WAVE:**  
-https://wave.webaim.org/
+<https://wave.webaim.org/>
 
 Visual accessibility checker. Highlights:
+
 - Semantic structure problems
 - Missing form labels
 - Contrast issues (not AI-relevant, but good to fix)
@@ -624,6 +628,7 @@ Visual accessibility checker. Highlights:
 Built into Chrome DevTools (Lighthouse tab).
 
 The "Accessibility" section flags many AI readability issues:
+
 - Image elements do not have alt attributes
 - Heading elements are not in a sequentially-descending order
 - Form elements do not have associated labels
@@ -658,6 +663,7 @@ schedule.scheduleJob('0 9 * * 1', async function() {
 **Google Search Console monitoring:**
 
 Check for:
+
 - Structured data errors (increases over time)
 - Pages with missing or invalid markup
 - Crawl errors that might hide content from AI
@@ -665,6 +671,7 @@ Check for:
 **Traffic pattern monitoring:**
 
 Track:
+
 - Referrals from AI chat interfaces (if trackable)
 - Increases/decreases in organic search
 - Voice search queries (often use AI extraction)
@@ -732,7 +739,7 @@ If they struggle, AI will struggle too.
 
 Here's how I test client sites:
 
-**Phase 1: Initial audit (2-3 hours)**
+### Phase 1: Initial audit (2-3 hours)
 
 1. Run morning-after test on 5-10 key pages
 2. Check sitemap exists and is valid
@@ -741,7 +748,7 @@ Here's how I test client sites:
 5. Review link text across main navigation
 6. Document findings
 
-**Phase 2: Detailed analysis (4-6 hours)**
+### Phase 2: Detailed analysis (4-6 hours)
 
 1. Headless browser testing on key pages
 2. Test with JavaScript disabled
@@ -750,14 +757,14 @@ Here's how I test client sites:
 5. Content structure review (heading hierarchy)
 6. Internal linking audit
 
-**Phase 3: Automated setup (2-4 hours)**
+### Phase 3: Automated setup (2-4 hours)
 
 1. Create automated test suite
 2. Set up weekly monitoring
 3. Configure alerts for failures
 4. Document baseline metrics
 
-**Phase 4: Ongoing (30 minutes weekly)**
+### Phase 4: Ongoing (30 minutes weekly)
 
 1. Review automated test results
 2. Check for new errors
