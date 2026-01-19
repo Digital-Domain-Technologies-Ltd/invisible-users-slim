@@ -56,9 +56,9 @@ Total initial investment: 85-115 hours over 9 weeks for comprehensive implementa
 
 For questions or consulting enquiries:
 
-- Tom Harris, Principal Consultant
-- Digital Domain Technologies Ltd
-- 25 years specializing in Adobe Experience Manager and Edge Delivery Services
+- Tom Cranstoun
+- Email: <tom.cranstoun@gmail.com>
+- Website: <https://allabout.network>
 
 ---
 

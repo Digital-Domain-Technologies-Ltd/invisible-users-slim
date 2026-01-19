@@ -47,7 +47,7 @@ This is the streamlined "slim" version of The Invisible Users, focused on:
 5. **Metadata That Works** - Schema.org and metadata implementation
 6. **Navigation** - Site discovery and navigation patterns
 7. **JavaScript** - Making dynamic sites AI-readable
-8. **Testing** - (Chapter 8 content TBD)
+8. **Testing** - Testing methodologies for AI readability validation
 9. **Anti-Patterns** - Common mistakes and fixes
 10. **Implementation** - Practical roadmap
 

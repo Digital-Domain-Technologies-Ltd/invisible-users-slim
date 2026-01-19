@@ -61,13 +61,14 @@ All chapters are available as separate downloadable files. Each chapter is self-
 - Handling dynamic content
 - SPAs and AI readability
 
-**Chapter 8: Testing with AI Agents** (to be created)
+**Chapter 8: Testing with AI Agents** (`chapter-08-testing.md`)
 
 - The morning-after test (detailed)
-- Headless browser testing
+- Testing with multiple AI tools
 - Structured data validation
-- Automated testing suites
-- Continuous monitoring
+- Automated testing approaches
+- Common testing mistakes
+- Implementation roadmap for testing
 
 **Chapter 9: Common Anti-Patterns** (to be created)
 
