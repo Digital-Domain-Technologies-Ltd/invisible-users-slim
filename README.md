@@ -23,6 +23,10 @@ See the parent repository's [CLAUDE.md](../../CLAUDE.md) and [docs/repo/GIT-READ
 
 ## Overview
 
+This slim guide provides practical, immediately actionable patterns for making websites work effectively with AI agents. Written as a companion to "The Invisible Users" (the comprehensive 13-chapter guide), this book focuses on implementation over context.
+
+**Market timing:** January 2026 saw Amazon, Microsoft, and Google launch agent commerce systems within seven days, accelerating the transition from experimental to infrastructure. This guide provides patterns that work regardless of platform dominance.
+
 This is the streamlined "slim" version of The Invisible Users, focused on:
 
 - **Practical patterns** you can implement immediately
