@@ -115,7 +115,7 @@ Every site should have basic organization markup. This goes in your site-wide te
   "name": "Digital Domain Technologies Ltd",
   "url": "https://www.digitaldomain.co.uk",
   "logo": "https://www.digitaldomain.co.uk/logo.png",
-  "description": "Adobe Experience Manager and Edge Delivery Services consultancy",
+  "description": "Enterprise content management and web development consultancy",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "123 Oxford Road",
@@ -198,8 +198,8 @@ For blog posts, articles, case studies—any editorial content:
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "How to Migrate from AEM Classic to Edge Delivery Services",
-  "description": "A practical guide to migrating Adobe Experience Manager sites to Edge Delivery Services, including common pitfalls and solutions.",
+  "headline": "How to Migrate from Legacy CMS to Modern Web Architecture",
+  "description": "A practical guide to migrating from traditional content management systems to modern web architectures, including common pitfalls and solutions.",
   "image": "https://example.com/article-image.jpg",
   "author": {
     "@type": "Person",
@@ -375,8 +375,8 @@ Step-by-step guides benefit from explicit structure:
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to Install Edge Delivery Services CLI",
-  "description": "Step-by-step guide to installing and configuring the Adobe Edge Delivery Services command-line tools.",
+  "name": "How to Install Node.js CLI Tools",
+  "description": "Step-by-step guide to installing and configuring Node.js command-line tools.",
   "totalTime": "PT10M",
   "estimatedCost": {
     "@type": "MonetaryAmount",
@@ -403,13 +403,13 @@ Step-by-step guides benefit from explicit structure:
     {
       "@type": "HowToStep",
       "name": "Install the CLI",
-      "text": "Install the Adobe AEM CLI globally using: npm install -g @adobe/aem-cli",
+      "text": "Install the CLI tool globally using: npm install -g example-cli",
       "url": "https://example.com/guide#step2"
     },
     {
       "@type": "HowToStep",
       "name": "Verify installation",
-      "text": "Confirm successful installation by running: aem --version",
+      "text": "Confirm successful installation by running: example-cli --version",
       "url": "https://example.com/guide#step3"
     }
   ]
@@ -423,7 +423,7 @@ The `totalTime` uses ISO 8601 duration format:
 - PT1H30M = 1 hour 30 minutes
 - P2D = 2 days
 
-This helps AI answer: "How long does it take to install the EDS CLI?" → "10 minutes"
+This helps AI answer: "How long does it take to install the CLI tool?" → "10 minutes"
 
 ## When NOT to use metadata
 
