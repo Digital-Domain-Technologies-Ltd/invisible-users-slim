@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Practical phased implementation roadmap for making websites AI-friendly, from assessment through foundational fixes to advanced patterns."
+keywords: [implementation, roadmap, phased-approach, priority-tasks, measurement, roi, incremental-improvement]
+book: "Don't Make the AI Think"
+chapter: 10
+wordcount: 3348
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 10: Implementation Roadmap
 
 ## From theory to practice

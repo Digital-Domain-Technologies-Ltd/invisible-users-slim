@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "How to structure content using semantic HTML, proper heading hierarchy, lists, and document landmarks for AI comprehension."
+keywords: [content-architecture, heading-hierarchy, semantic-elements, document-structure, lists, landmarks]
+book: "Don't Make the AI Think"
+chapter: 4
+wordcount: 2100
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 4: Content Architecture for Machines
 
 ## The building blocks

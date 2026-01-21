@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Practical testing strategies to validate AI agent compatibility, including curl tests, validator tools, and agent simulation."
+keywords: [testing, validation, curl-testing, schema-validation, agent-simulation, html-validation, readability-testing]
+book: "Don't Make the AI Think"
+chapter: 8
+wordcount: 2808
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 8: Testing with AI Agents
 
 ## Why testing matters

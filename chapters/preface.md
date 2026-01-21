@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Introduction to the practical guide for making websites work for AI agents"
+keywords: [preface, book-structure, reading-guide, ai-agents]
+book: "Don't Make the AI Think"
+chapter: 0
+wordcount: 850
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Preface
 
 You're reading this because something's changed. Maybe your traffic patterns look weird. Maybe someone told you AI agents can't read your site. Maybe you're hearing about competitors getting recommended by ChatGPT whilst your beautiful website stays invisible. Whatever brought you here, you're past the "should we care about this?" question and into "what do we actually do?"
@@ -24,19 +40,25 @@ Ten focused chapters on implementation. How AI agents read HTML. What patterns w
 
 ## What this book isn't
 
-This isn't a comprehensive exploration of AI technology, business models, or strategic planning. For that, read "The Invisible Users" (the complete guide). This book assumes you're convinced and ready to implement.
+This isn't a comprehensive exploration of AI technology, business models, or strategic planning. For that, read "The MX Bible" (the complete technical reference). This book assumes you're convinced and ready to implement.
 
 This isn't about abandoning modern frameworks or returning to 1990s HTML. The patterns here work with React, Vue, complex SPAs, and JavaScript-heavy interfaces. You're fixing specific problems, not rebuilding from scratch.
 
 This isn't theoretical. Every pattern comes from real client work - sites that were invisible to AI agents and needed fixing quickly.
 
-## Want more depth?
+## The three-book ecosystem
 
-**For strategic context and comprehensive business analysis:** Read "The Invisible Users" (the complete guide) which explores business models, organisational change, legal implications, platform competition, and strategic positioning across 13 chapters.
+This practical guide is part of a three-book series:
 
-**For business justification:** Chapter 11 of this book provides essential ROI calculations and decision-making frameworks for technical teams who need to justify implementation work.
+**"Don't Make the AI Think"** (this book) - Practical implementation for developers and UX designers who need to fix sites quickly.
 
-**For living resources:** Appendices and industry news are shared between all books and continuously updated at <https://allabout.network/invisible-users/> - including implementation examples, pattern libraries, and protocol updates.
+**"The MX Handbook"** - Platform-specific implementations across major CMS systems, content strategies, and detailed testing frameworks for practitioners managing larger deployments.
+
+**"The MX Bible"** - Comprehensive technical reference covering business models, organisational change, legal implications, and strategic positioning for architects and consultants implementing Machine Experience at scale.
+
+All three books share continuously updated appendices at <https://allabout.network/invisible-users/> including implementation examples, pattern libraries, and protocol updates.
+
+Read any book standalone, or use them together: this book for immediate fixes, the Handbook for platform integration, the Bible for comprehensive strategic context.
 
 ## How to use this book
 

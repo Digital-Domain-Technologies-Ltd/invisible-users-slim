@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Introduction to AI agents as invisible website visitors and why making sites AI-readable improves experiences for all users."
+keywords: [invisible-users, ai-agents, ai-recommendations, semantic-html, agent-visibility, economic-impact]
+book: "Don't Make the AI Think"
+chapter: 1
+wordcount: 1424
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 1: The Invisible Users
 
 ## A visitor you'll never see

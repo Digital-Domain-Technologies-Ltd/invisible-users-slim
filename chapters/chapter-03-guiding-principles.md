@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Four foundational principles for creating AI-friendly websites: semantic clarity, structural intent, explicit metadata, and strategic redundancy."
+keywords: [guiding-principles, semantic-clarity, structured-content, metadata, redundancy, ai-friendly-design]
+book: "Don't Make the AI Think"
+chapter: 3
+wordcount: 2041
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 3: Guiding Principles
 
 ## The don't make me think equivalent

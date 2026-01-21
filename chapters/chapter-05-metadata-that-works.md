@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Practical guide to Schema.org structured data, JSON-LD implementation, and metadata patterns that help AI agents extract accurate information."
+keywords: [metadata, schema-org, json-ld, structured-data, microdata, open-graph, product-schema]
+book: "Don't Make the AI Think"
+chapter: 5
+wordcount: 2429
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 5: Metadata That Works
 
 ## The promise layer

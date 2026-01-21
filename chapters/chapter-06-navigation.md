@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "How to make navigation clear and state changes explicit for AI agents through semantic links, breadcrumbs, and explicit state indicators."
+keywords: [navigation, state-management, breadcrumbs, link-semantics, page-state, url-structure]
+book: "Don't Make the AI Think"
+chapter: 6
+wordcount: 2420
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 6: Navigation and Discovery
 
 ## How AI discovers your content

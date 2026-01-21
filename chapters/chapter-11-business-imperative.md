@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "The commercial urgency of AI agent compatibility following January 2026 platform launches and the business cost of invisible failures."
+keywords: [business-imperative, platform-race, agent-commerce, competitive-advantage, revenue-impact, commercial-urgency]
+book: "Don't Make the AI Think"
+chapter: 11
+wordcount: 1544
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 11: Business Imperative
 
 Why fixing this matters commercially.

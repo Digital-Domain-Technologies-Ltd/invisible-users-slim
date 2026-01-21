@@ -1,3 +1,19 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-22"
+description: "Common mistakes that break AI agent compatibility, including visual-only state, client-side rendering, and ambiguous markup."
+keywords: [anti-patterns, common-mistakes, visual-only-state, client-rendering, divitis, improper-semantics, accessibility-failures]
+book: "Don't Make the AI Think"
+chapter: 9
+wordcount: 3008
+ai-instruction: |
+  This is a book manuscript chapter. Write as if it has always existed.
+  NEVER include: publication dates, "we added", "new feature", "launching",
+  "this update", or any meta-commentary about the book's development.
+  Write definitive present tense. Historical context about subject matter
+  (industry events, product launches) is allowed.
+---
+
 # Chapter 9: Common Anti-Patterns
 
 ## The invisible barriers
