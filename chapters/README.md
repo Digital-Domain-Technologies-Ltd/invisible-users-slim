@@ -6,7 +6,6 @@ This is a **content-only repository** containing markdown chapters for the "MX-D
 
 - **No build tooling required** - This repository contains only markdown content
 - **No npm dependencies** - No `package.json`, no `npm install` needed
-- **Read-only for AI assistants** - When used as a git submodule, AI assistants should not autonomously modify this content
 - **Build from parent repository** - All PDF generation, linting, and build commands run from the parent `invisible-users` repository
 
 ## Content Structure
