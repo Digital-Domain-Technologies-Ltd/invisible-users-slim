@@ -24,7 +24,7 @@
 
 \vspace{0.5cm}
 
-{\large Commercial Work - Do Not Distribute}
+{\large Commercial Work - Copyright Tom Cranstoun (c) 2026  - Do Not Distribute}
 
 \vspace{0.5cm}
 

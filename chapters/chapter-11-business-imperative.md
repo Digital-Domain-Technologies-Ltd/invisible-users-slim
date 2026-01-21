@@ -20,13 +20,14 @@ Why fixing this matters commercially.
 
 ## The Platform Race
 
-January 2026 changed everything. Three major platforms launched agent commerce systems within seven days:
+January 2026 changed everything. Four major platforms launched agent systems within eight days:
 
 - **Amazon Alexa+** (January 5th) - Voice-initiated purchasing with partner retailers
 - **Microsoft Copilot Checkout** (January 8th) - Complete transactions within the AI assistant
 - **Google Universal Commerce Protocol** (January 11th) - Open standard with Target and Walmart
+- **Anthropic Claude Cowork** (January 12th) - Autonomous digital colleague for complex workflows
 
-This isn't speculation about future possibilities. Agent-mediated commerce is happening now, and businesses that aren't ready are being excluded from high-conversion transactions.
+This isn't speculation about future possibilities. Agent-mediated commerce and autonomous task execution are happening now, and businesses that aren't ready are being excluded from high-conversion transactions and modern workflows.
 
 ## The Invisible Failures
 
